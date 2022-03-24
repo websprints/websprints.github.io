@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loading...</title>
+	<body>
+		<script type="text/javascript">
+			var lang = (navigator.language || navigator.userLanguage || '').toLowerCase()
+			var compoments = location.href.split('#')
+			var suffix = compoments.length >= 2 ? `#${compoments[1]}` : ''
+
+			if (lang == 'zh' || lang == 'zh-cn') {
+				location.href = './zh.html' + suffix
+			}
+			else {
+				location.href = './en.html' + suffix
+			}
+		</script>
+	</body>
+</head>
+<body>
+
+</body>
+</html>
